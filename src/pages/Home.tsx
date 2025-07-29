@@ -27,6 +27,7 @@ import ParticleBackground from "@/components/ParticleBackground";
 import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 
+
 const Home = () => {
   const { scrollY } = useScroll();
   const y1 = useTransform(scrollY, [0, 300], [0, 100]);
@@ -61,14 +62,13 @@ const Home = () => {
   ];
 
   const stats = [
-    { number: "160+", label: "PSM", target: 160 },
+    { number: "50+", label: "(PSM & Insurance Audits)", target: 50 },
     { number: "23+", label: "Years Experience", target: 23 },
-    { number: "20+", label: "Major Projects", target: 20 },
+    { number: "50+", label: "Small & Major Projects", target: 50 },
     { number: "100%", label: "Client Satisfaction", target: 100 },
   ];
 
   const industries = [
-    "Mining",
     "LNG",
     "Oil & Gas Exploration & Production",
     "Petrochemical/Chemical",
@@ -80,11 +80,6 @@ const Home = () => {
   ];
 
   const industryImagesRow1 = [
-    {
-      src: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSoQDjrfYRZYKuu8RTiu-juN84jsiuMlr0kTw&s",
-      title: "Mining",
-      description: "Complex refinery operations",
-    },
     {
       src: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRUhVhum_ED64vcnDlehM82K5CmXr52tXVcXQ&s",
       title: "LNG",
@@ -142,8 +137,8 @@ const Home = () => {
         const progress = step / steps;
 
         setCounters({
-          assessments: Math.floor(600 * progress),
-          experience: Math.floor(20 * progress),
+          assessments: Math.floor(50 * progress),
+          experience: Math.floor(23 * progress),
           projects: Math.floor(50 * progress),
           satisfaction: Math.floor(100 * progress),
         });
@@ -162,9 +157,9 @@ const Home = () => {
       <FloatingCTA />
 
       <HeroSection
-        title="Safety Advisor Hub™ – quick, reliable help"
+        title="Protecting Life, Assets and The Planet"
         subtitle="Process Safety Support 2025"
-        description="Leading process safety expert Sunil provides comprehensive risk management solutions for the oil & gas industry worldwide."
+        description="Leading Process Safety & Loss Prevention expert Sunil provides comprehensive solutions for Oil & Gas, Process Industries, Insurance Risk Management and related trainings."
         ctaText="Meet Sunil"
         ctaLink="/about"
         backgroundImageNew="https://fpimages.withfloats.com/actual/60e003da8172b4000108ce39.jpg"
@@ -292,13 +287,13 @@ const Home = () => {
 
               <div className="space-y-4 pl-8 text-lg text-gray-600 leading-relaxed">
                 <p>
-                  Sunil Sori holds an <strong>MSc. in Process Safety & Loss Prevention</strong> from the University of Sheffield (UK) and a <strong>BE in Chemical Engineering</strong>. With over 20 years of experience, he has delivered process safety assurance to major oil, gas, and insurance companies, leading multi-million-dollar projects worldwide.
+                  Sunil Sori holds an <strong>MSc. in Process Safety & Loss Prevention</strong> from the University of Sheffield (UK) and a <strong>BE in Chemical Engineering</strong>. With over 23 years of experience, he has delivered process safety assurance to major oil, gas, and insurance companies, leading multi-million-dollar projects worldwide.
                 </p>
                 <p>
-                  As a <strong>Certified Process Safety Auditor (CPSA)</strong> and <strong>Certified Functional Safety Professional (CFSP)</strong>, Sunil brings deep expertise in QRA, HAZID, HAZOP, SIL studies, facility siting, and PSM implementation. His experience spans engineering design, operations, auditing, consulting, and risk engineering.
+                  As a <strong>Professional Process Safety Engineer</strong> from IChemE <strong>Certified Process Safety Auditor (CPSA)</strong> and <strong>Certified Functional Safety Professional (CFSP)</strong>, Sunil brings deep expertise in QRA, HAZID, HAZOP, SIL studies, facility siting, and PSM implementation. His experience spans engineering design, operations, auditing, consulting, and risk engineering.
                 </p>
                 <p>
-                  Sunil has worked with industry leaders including <strong>ADNOC, BP, Technip FMC, KOC</strong> and more. He is a recognized speaker at global conferences, known for combining technical rigor with practical, risk-based solutions.
+                  Sunil has worked with industry leaders including <strong>DNV, ADNOC, BP-ROO, Technip FMC, KOC </strong> and more. He is a recognized speaker at global conferences, known for combining technical rigor with practical, risk-based solutions.
                 </p>
 
                 
@@ -601,19 +596,20 @@ const Home = () => {
           <div className="flex items-center mb-6">
             <div className="flex-shrink-0 mr-4">
               <img
-                src="https://randomuser.me/api/portraits/men/32.jpg"
+                src="/assets/Singaravelu.jpeg"
                 alt="Client"
                 className="h-14 w-14 rounded-full object-cover border-2 border-primary/30"
               />
             </div>
             <div>
-              <h4 className="text-lg font-bold text-gray-900">Michael Johnson</h4>
-              <p className="text-sm text-gray-500">Safety Manager, OilCo</p>
+              <h4 className="text-lg font-bold text-gray-900">Singaravelu Subramanian</h4>
+              <p className="text-sm text-gray-500">Lead Process Safety, TAQA Group</p>
             </div>
           </div>
           <p className="text-gray-600 mb-6">
-            "Sunil's expertise in PSM implementation was invaluable for our refinery. 
-            His risk assessments identified critical gaps we had missed for years."
+            "Sunil is an exceptional Process Safety Engineer with deep technical expertise and strong leadership. 
+            His proactive approach, integrity, and attention to detail have greatly enhanced our safety and operational performance. 
+            A true asset to any organization."
           </p>
           <div className="flex">
             {[...Array(5)].map((_, i) => (
@@ -642,19 +638,20 @@ const Home = () => {
           <div className="flex items-center mb-6">
             <div className="flex-shrink-0 mr-4">
               <img
-                src="https://randomuser.me/api/portraits/women/44.jpg"
+                src="/assets/Raghesh.jpeg"
                 alt="Client"
                 className="h-14 w-14 rounded-full object-cover border-2 border-primary/30"
               />
             </div>
             <div>
-              <h4 className="text-lg font-bold text-gray-900">Sarah Williams</h4>
-              <p className="text-sm text-gray-500">Operations Director, PetroChem</p>
+              <h4 className="text-lg font-bold text-gray-900">Raghesh Vijay</h4>
+              <p className="text-sm text-gray-500">(MSc ENG, CSP), Lead Process Safety Engineer</p>
             </div>
           </div>
           <p className="text-gray-600 mb-6">
-            "The insurance risk engineering study saved us millions in premiums. 
-            Process Safety Support delivers exceptional value with their deep industry knowledge."
+            "Sunil is a visionary Process Safety Leader with exceptional problem-solving and team-building skills. 
+            At ADNOC, his positive mindset, technical expertise, and leadership made a lasting impact. 
+            A true asset for any organization seeking a world-class expert."
           </p>
           <div className="flex">
             {[...Array(5)].map((_, i) => (
@@ -683,20 +680,19 @@ const Home = () => {
           <div className="flex items-center mb-6">
             <div className="flex-shrink-0 mr-4">
               <img
-                src="https://randomuser.me/api/portraits/men/75.jpg"
+                src="/assets/Gilberto.jpeg"
                 alt="Client"
                 className="h-14 w-14 rounded-full object-cover border-2 border-primary/30"
               />
             </div>
             <div>
-              <h4 className="text-lg font-bold text-gray-900">David Chen</h4>
-              <p className="text-sm text-gray-500">VP Engineering, GasGlobal</p>
+              <h4 className="text-lg font-bold text-gray-900">Gilberto Useche</h4>
+              <p className="text-sm text-gray-500">Solution Leaders Fayez Engineering (SLFE)</p>
             </div>
           </div>
           <p className="text-gray-600 mb-6">
-            "We've worked with many consultants, but Sunil's approach to SIL 
-            classification was the most thorough we've seen. Regulatory compliance 
-            has never been easier."
+            "Sunil brought strong technical expertise and professionalism to our Process Safety team at TechnipFMC. 
+            His reliability, problem-solving ability, and excellent communication skills make him a valuable asset to any organization."
           </p>
           <div className="flex">
             {[...Array(5)].map((_, i) => (
@@ -775,8 +771,7 @@ const Home = () => {
             </motion.h2>
 
             <p className="text-xl mb-8 opacity-90">
-              Get expert consultation and comprehensive risk assessment for your
-              facility.
+              Get in touch for all Process Safety and Loss prevention requirements for your organization.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center">

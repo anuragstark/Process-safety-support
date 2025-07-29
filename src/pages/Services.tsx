@@ -4,97 +4,31 @@ import {
   ClipboardList, Factory, Zap, Search, Layers, Target, Gauge, CircleDashed, 
   ShieldCheck, AlertOctagon, FileSearch, Route, FireExtinguisher, 
   HardHat, Settings, BookOpen, Users, ClipboardCheck, AlertCircle,
-  ChevronDown, ChevronUp
+  ChevronDown, ChevronUp, GanttChart, FactoryIcon, Radar, ListChecks,
+  ScrollText, FlameKindling, CircuitBoard, LandPlot, AlarmClock,
+  Radiation, Warehouse, ArrowRightCircle, FileStack, FileBox
 } from 'lucide-react';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '@/components/ui/accordion';
 import HeroSection from '@/components/HeroSection';
 import Layout from '@/components/Layout';
+// import Layout from '@/components/Layout';
 
 const Services = () => {
   const allServices = [
-    {
-      id: "facility-siting",
-      title: "Facility Siting & Layout Studies",
-      description: "Comprehensive safety and design evaluations to optimize industrial facility layouts while minimizing risks",
-      icon: Map,
-      image: "https://images.unsplash.com/photo-1605152276897-4f618f831968?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80",
-      highlights: [
-        "API RP 752/753 Compliance",
-        "Quantitative Risk Assessment",
-        "Hazard Impact Zone Mapping",
-        "Emergency Response Integration"
-      ],
-      details: {
-        purpose: [
-          "Reduce risk to personnel and assets from fire, explosion, and toxic release",
-          "Ensure compliance with safety regulations (OSHA, NFPA, API)",
-          "Support efficient operations and emergency response",
-          "Optimize space utilization and future expansion"
-        ],
-        elements: [
-          {
-            title: "Siting Analysis",
-            icon: Map,
-            items: [
-              "Evaluation of nearby communities and environmental factors",
-              "Assessment of natural hazards (flood zones, seismic activity)",
-              "Impact zone analysis for explosions and toxic releases",
-              "QRA-based safe distance definitions"
-            ]
-          },
-          {
-            title: "Layout Planning",
-            icon: LayoutGrid,
-            items: [
-              "Optimal arrangement of process units and storage tanks",
-              "Control room location analysis",
-              "Utility systems placement",
-              "Emergency facility positioning"
-            ]
-          },
-          {
-            title: "Hazard Impact Zones",
-            icon: Flame,
-            items: [
-              "Thermal radiation mapping (fire scenarios)",
-              "Overpressure analysis (explosion scenarios)",
-              "Toxic gas dispersion modeling",
-              "Critical building protection analysis"
-            ]
-          },
-          {
-            title: "Emergency Planning",
-            icon: AlertTriangle,
-            items: [
-              "Escape route design",
-              "Muster area placement",
-              "Rescue access planning",
-              "EERA (Escape, Evacuation, and Rescue Analysis)"
-            ]
-          }
-        ],
-        deliverables: [
-          "2D/3D facility layout drawings with hazard zones",
-          "Impact zone maps from QRA modeling",
-          "Comprehensive risk assessment report",
-          "Layout optimization recommendations",
-          "Regulatory compliance documentation"
-        ]
-      }
-    },
+    // Section 1: Process Safety Management (PSM) Services
     {
       id: "psm-implementation",
-      title: "PSM Implementation",
-      description: "Process Safety Management framework implementation support",
+      title: "PSM Implementation Support",
+      description: "Establishing and embedding a comprehensive PSM framework to ensure adherence to safety protocols and risk management.",
       icon: HardHat,
       image: "https://images.unsplash.com/photo-1513828583688-c52646db42da?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80",
       highlights: [
         "OSHA 14 elements compliance",
-        "Hazard identification",
-        "Management of Change",
-        "Mechanical Integrity"
+        "Regulatory Compliance Assurance",
+        "Gap analysis and implementation",
+        "Staff training and awareness"
       ],
       details: {
         purpose: [
@@ -105,163 +39,235 @@ const Services = () => {
         ],
         elements: [
           {
-            title: "Employee Participation",
-            icon: Users,
+            title: "Regulatory Compliance",
+            icon: ScrollText,
             items: [
-              "Worker involvement in safety decisions",
-              "Hazard reporting systems",
-              "Safety committee formation",
-              "Training and awareness programs"
+              "Alignment with OSHA and local regulations",
+              "Documentation management",
+              "Policy development",
+              "Compliance tracking"
             ]
           },
           {
-            title: "Process Safety Information",
-            icon: BookOpen,
+            title: "Implementation Framework",
+            icon: GanttChart,
             items: [
-              "Chemical hazard documentation",
-              "Equipment design specifications",
-              "Process technology documentation",
-              "Safety system documentation"
+              "Assessment of existing systems",
+              "Gap identification",
+              "Implementation roadmap",
+              "Training programs"
             ]
           },
           {
-            title: "Process Hazard Analysis",
-            icon: FileSearch,
+            title: "Audit Preparation",
+            icon: ClipboardCheck,
             items: [
-              "HAZOP, What-If, FMEA methodologies",
-              "Risk assessment and prioritization",
-              "Safeguard evaluation",
-              "Action item tracking"
+              "Documentation preparation",
+              "Staff awareness programs",
+              "Inquiry handling procedures",
+              "Presentation materials"
             ]
           },
           {
-            title: "Management of Change",
-            icon: Settings,
+            title: "Continuous Improvement",
+            icon: CircuitBoard,
             items: [
-              "Change classification system",
-              "Impact assessment procedures",
-              "Authorization workflows",
-              "Documentation and communication"
+              "Performance metrics",
+              "Review cycles",
+              "Update mechanisms",
+              "Feedback integration"
             ]
           }
         ],
         deliverables: [
           "Complete PSM program documentation",
           "Compliance gap analysis report",
+          "Implementation roadmap",
           "Training materials and records",
-          "Audit and inspection checklists",
-          "Continuous improvement framework"
+          "Audit preparation package"
         ]
       }
     },
     {
-      id: "insurance-risk",
-      title: "Insurance Risk Engineering",
-      description: "Risk assessment and loss prevention strategies for insurance underwriting",
-      icon: Shield,
-      image: "https://images.unsplash.com/photo-1623668192062-a4053bb17064?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      id: "corporate-audit",
+      title: "Corporate Audit Representation",
+      description: "Professional representation during internal or external audits to ensure proper communication of safety systems.",
+      icon: FileStack,
+      image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80",
       highlights: [
-        "Property damage assessment",
-        "Machinery breakdown evaluation",
-        "Business interruption analysis",
-        "Underwriting support"
+        "Auditor engagement management",
+        "Regulatory alignment",
+        "Quality improvement",
+        "Findings response"
       ],
       details: {
         purpose: [
-          "Identify potential loss scenarios in industrial facilities",
-          "Quantify maximum probable losses",
-          "Recommend risk improvement measures",
-          "Support insurance underwriting decisions"
+          "Ensure proper representation during audits",
+          "Maintain regulatory compliance",
+          "Improve audit outcomes",
+          "Prevent miscommunication"
         ],
         elements: [
           {
-            title: "Fire Protection",
-            icon: FireExtinguisher,
+            title: "Audit Management",
+            icon: ClipboardList,
             items: [
-              "Firewater system adequacy",
-              "Detection and suppression systems",
-              "Passive fire protection",
-              "Emergency response capability"
+              "Session coordination",
+              "Communication management",
+              "Document presentation",
+              "Facilitation"
             ]
           },
           {
-            title: "Equipment Integrity",
-            icon: Factory,
-            items: [
-              "Inspection and maintenance programs",
-              "Corrosion management",
-              "Pressure system integrity",
-              "Critical equipment redundancy"
-            ]
-          },
-          {
-            title: "Process Safety",
+            title: "Regulatory Alignment",
             icon: ShieldCheck,
             items: [
-              "Hazardous area classification",
-              "Process control systems",
-              "Emergency shutdown systems",
-              "Safety instrumented systems"
+              "Compliance verification",
+              "Policy interpretation",
+              "Standard alignment",
+              "Best practices application"
             ]
           },
           {
-            title: "Business Continuity",
-            icon: Zap,
+            title: "Findings Response",
+            icon: FileSearch,
             items: [
-              "Redundancy analysis",
-              "Alternate supply chains",
-              "Recovery time objectives",
-              "Impact mitigation strategies"
+              "Initial response preparation",
+              "Technical clarification",
+              "Corrective action planning",
+              "Follow-up coordination"
+            ]
+          },
+          {
+            title: "Quality Improvement",
+            icon: CheckCircle,
+            items: [
+              "Process enhancement",
+              "Documentation improvement",
+              "Training recommendations",
+              "Continuous improvement"
+            ]
+          }
+        ],
+        deliverables: [
+          "Audit representation report",
+          "Findings response package",
+          "Corrective action plan",
+          "Process improvement recommendations",
+          "Regulatory compliance documentation"
+        ]
+      }
+    },
+    // Section 2: Insurance Risk Engineering & Loss Prevention
+    {
+      id: "insurance-risk",
+      title: "Insurance Risk Engineering & Loss Prevention",
+      description: "Comprehensive risk assessments and loss prevention strategies for industrial facilities.",
+      icon: Shield,
+      image: "https://plus.unsplash.com/premium_photo-1664300971344-5372b246f669?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      highlights: [
+        "Fire & property damage assessment",
+        "Machinery breakdown evaluation",
+        "Business interruption analysis",
+        "PML & BI calculations"
+      ],
+      details: {
+        purpose: [
+          "Identify potential loss scenarios",
+          "Quantify maximum probable losses",
+          "Recommend risk improvement measures",
+          "Support insurance underwriting"
+        ],
+        elements: [
+          {
+            title: "Property Assessment",
+            icon: FactoryIcon,
+            items: [
+              "Fire protection systems evaluation",
+              "Structural integrity review",
+              "Material storage assessment",
+              "Passive fire protection"
+            ]
+          },
+          {
+            title: "Equipment Evaluation",
+            icon: Settings,
+            items: [
+              "Machinery condition assessment",
+              "Maintenance program review",
+              "Critical equipment analysis",
+              "Redundancy evaluation"
+            ]
+          },
+          {
+            title: "Business Impact",
+            icon: Gauge,
+            items: [
+              "Interruption scenario modeling",
+              "Financial impact calculation",
+              "Recovery time assessment",
+              "Alternative operations planning"
+            ]
+          },
+          {
+            title: "Risk Quantification",
+            icon: Target,
+            items: [
+              "Probable Maximum Loss (PML)",
+              "Business Interruption (BI) values",
+              "Catastrophic scenario modeling",
+              "Risk mitigation ROI analysis"
             ]
           }
         ],
         deliverables: [
           "Risk engineering report",
-          "Probable Maximum Loss (PML) calculation",
-          "Business Interruption (BI) analysis",
-          "Risk improvement recommendations",
-          "Underwriting support documentation"
+          "PML/BI calculations",
+          "Facility upgrade recommendations",
+          "Underwriter's report",
+          "Loss prevention strategies"
         ]
       }
     },
+    // Section 3: Process Hazard Analysis
     {
       id: "hazop",
       title: "HAZOP Study",
-      description: "Structured technique for identifying hazards and operability problems in process systems",
+      description: "Systematic identification of hazards and operability problems using guideword methodology.",
       icon: FileSearch,
       image: "https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80",
       highlights: [
-        "Systematic guide word approach",
-        "Multidisciplinary team participation",
-        "Qualitative hazard identification",
-        "Comprehensive documentation"
+        "Guideword methodology",
+        "Multidisciplinary team approach",
+        "Deviation analysis",
+        "Risk reduction recommendations"
       ],
       details: {
         purpose: [
           "Identify deviations from design intent",
-          "Evaluate causes and consequences of deviations",
-          "Recommend safeguards and corrective actions",
-          "Improve process safety and reliability"
+          "Evaluate causes and consequences",
+          "Assess existing safeguards",
+          "Recommend risk reduction measures"
         ],
         elements: [
           {
             title: "Study Preparation",
             icon: ClipboardList,
             items: [
-              "Define scope and objectives",
-              "Select team members",
-              "Prepare documentation (P&IDs, PFDs)",
-              "Develop study plan"
+              "Scope definition",
+              "Team selection",
+              "Documentation review",
+              "Study plan development"
             ]
           },
           {
-            title: "Guideword Application",
-            icon: Search,
+            title: "Hazard Identification",
+            icon: AlertOctagon,
             items: [
-              "No/None (absence of flow)",
-              "More (increased flow, pressure)",
-              "Less (decreased flow, pressure)",
-              "Reverse (flow direction change)"
+              "Guideword application",
+              "Deviation analysis",
+              "Scenario development",
+              "Consequence evaluation"
             ]
           },
           {
@@ -269,105 +275,107 @@ const Services = () => {
             icon: AlertTriangle,
             items: [
               "Likelihood estimation",
-              "Consequence severity rating",
-              "Existing safeguard evaluation",
-              "Risk ranking and prioritization"
+              "Severity rating",
+              "Safeguard effectiveness",
+              "Risk ranking"
             ]
           },
           {
-            title: "Action Tracking",
-            icon: ClipboardCheck,
+            title: "Recommendations",
+            icon: ListChecks,
             items: [
-              "Recommendation development",
-              "Assignment of responsibilities",
-              "Follow-up verification",
-              "Documentation and reporting"
+              "Risk reduction measures",
+              "Action prioritization",
+              "Responsibility assignment",
+              "Follow-up tracking"
             ]
           }
         ],
         deliverables: [
-          "HAZOP worksheets with identified deviations",
-          "Risk ranking of identified hazards",
-          "Recommendations for risk reduction",
-          "Action items with assigned responsibilities",
+          "HAZOP worksheets",
+          "Risk ranking report",
+          "Recommendations list",
+          "Action tracking system",
           "Final HAZOP report"
         ]
       }
     },
+    // Section 4: Operational & Risk Visualization Studies
     {
-      id: "lopa-sil",
-      title: "LOPA & SIL Assessment",
-      description: "Layer of Protection Analysis and Safety Integrity Level determination",
-      icon: ShieldCheck,
-      image: "https://images.unsplash.com/photo-1624395213043-fa2e123b2656?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1974&q=80",
+      id: "simo-mopo",
+      title: "SIMOPS & MOPO Study",
+      description: "Evaluation and management of risks from simultaneous operations at industrial facilities.",
+      icon: AlarmClock,
+      image: "https://plus.unsplash.com/premium_photo-1661537558791-42f9f136da9b?q=80&w=1172&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       highlights: [
-        "Semi-quantitative risk assessment",
-        "Independent Protection Layer evaluation",
-        "SIL determination and verification",
-        "Safety Instrumented Function analysis"
+        "Activity conflict identification",
+        "Risk assessment matrix",
+        "Safe work sequencing",
+        "MOPO matrix development"
       ],
       details: {
         purpose: [
-          "Determine adequacy of existing safeguards",
-          "Identify required risk reduction for hazardous scenarios",
-          "Specify Safety Integrity Levels (SIL) for safety functions",
-          "Ensure compliance with IEC 61511/ISA 84 standards"
+          "Identify conflicting operations",
+          "Assess overlap risks",
+          "Develop control measures",
+          "Create safe work sequences"
         ],
         elements: [
           {
-            title: "Scenario Development",
-            icon: FileSearch,
+            title: "Operations Analysis",
+            icon: GanttChart,
             items: [
-              "Identify initiating events",
-              "Define consequence severity",
-              "Establish risk tolerance criteria",
-              "Document scenario parameters"
+              "Activity schedule review",
+              "Space utilization assessment",
+              "Resource allocation review",
+              "Interface identification"
             ]
           },
           {
-            title: "LOPA Evaluation",
-            icon: Layers,
+            title: "Risk Evaluation",
+            icon: AlertTriangle,
             items: [
-              "Identify independent protection layers (IPLs)",
-              "Calculate risk reduction factors",
-              "Determine gap between existing and required protection",
-              "Evaluate human factors in protection layers"
+              "Hazard identification",
+              "Impact assessment",
+              "Probability analysis",
+              "Risk categorization"
             ]
           },
           {
-            title: "SIL Determination",
+            title: "Control Measures",
             icon: ShieldCheck,
             items: [
-              "Assign SIL requirements (1-4)",
-              "Verify safety function requirements",
-              "Evaluate architectural constraints",
-              "Document safety requirements specifications"
+              "Isolation requirements",
+              "Communication protocols",
+              "Safety barrier implementation",
+              "Emergency procedures"
             ]
           },
           {
-            title: "Verification",
-            icon: CheckCircle,
+            title: "Matrix Development",
+            icon: ListChecks,
             items: [
-              "SIL verification calculations",
-              "Fault tree analysis",
-              "Proof test interval determination",
-              "Maintenance procedure review"
+              "Permitted operations definition",
+              "Restriction documentation",
+              "Approval workflow",
+              "Compliance monitoring"
             ]
           }
         ],
         deliverables: [
-          "LOPA worksheets",
-          "SIL determination report",
-          "Safety requirement specifications",
-          "Verification calculations",
-          "Testing and maintenance procedures"
+          "SIMOPS risk assessment",
+          "MOPO matrix",
+          "Control measures list",
+          "Implementation plan",
+          "Training materials"
         ]
       }
     },
+    // Section 5: Facility Safety Design & Emergency Planning
     {
       id: "qra",
       title: "Quantitative Risk Assessment",
-      description: "Data-driven risk quantification for fire, explosion and toxic release scenarios",
+      description: "Data-driven risk quantification for fire, explosion and toxic release scenarios.",
       icon: Gauge,
       image: "https://images.unsplash.com/photo-1606660265514-358ebbadc80d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1974&q=80",
       highlights: [
@@ -437,45 +445,66 @@ const Services = () => {
   ];
 
   const additionalServices = [
+    // Remaining services from Section 1
     {
-      question: "HAZID Study",
-      answer: "Early-stage hazard identification study that systematically identifies potential safety, environmental and operational hazards during project conceptual or FEED phase to inform design decisions and risk management planning."
-    },
-    {
-      question: "FMEA",
-      answer: "Failure Modes and Effects Analysis that examines potential failure modes within systems or equipment, their causes and effects, with risk prioritization based on severity, occurrence and detection ratings."
-    },
-    {
-      question: "SIMOPS & MOPO",
-      answer: "Simultaneous Operations planning and Matrix of Permitted Operations development to manage risks when multiple hazardous activities occur concurrently at a facility."
-    },
-    {
-      question: "F&G Mapping",
-      answer: "Fire and Gas detector placement optimization study using 3D modeling to ensure adequate coverage and early detection of hazardous events in compliance with ISA TR84.00.07."
-    },
-    {
-      question: "Bow Tie Analysis",
-      answer: "Visual risk assessment method combining fault tree and event tree analysis to illustrate hazard causes, preventive/mitigative barriers, and potential consequences for improved risk communication."
-    },
-    {
-      question: "Hazardous Area Classification",
-      answer: "Classification of areas where explosive atmospheres may occur to guide proper equipment selection and installation per IEC/ATEX/NEC standards."
-    },
-    {
-      question: "EERA",
-      answer: "Escape, Evacuation and Rescue Analysis to evaluate and optimize emergency response provisions including escape routes, muster points and rescue capabilities."
+      question: "PSM Audit Actions Closeout Support",
+      answer: "Assistance with addressing audit findings through corrective action planning, implementation tracking and verification of effectiveness to ensure compliance and continuous improvement."
     },
     {
       question: "PSM Auditing",
-      answer: "Comprehensive evaluation of Process Safety Management system implementation against OSHA 1910.119 requirements and industry best practices."
+      answer: "Comprehensive evaluation of Process Safety Management system implementation against OSHA 1910.119 requirements and industry best practices, covering all 14 elements."
+    },
+    
+    // Remaining services from Section 2
+    {
+      question: "Fire Property Damage Assessments",
+      answer: "Evaluation of fire protection systems and property vulnerabilities to determine potential damage scenarios and recommend improvements."
     },
     {
-      question: "Corporate Audit Representation",
-      answer: "Expert representation during regulatory or internal safety audits to ensure proper communication of safety systems and compliance status."
+      question: "Machinery Breakdown Evaluation",
+      answer: "Assessment of critical equipment reliability and maintenance programs to prevent failures and minimize operational disruptions."
     },
     {
-      question: "PSM Audit Closeout Support",
-      answer: "Assistance with addressing audit findings through corrective action planning, implementation tracking and verification of effectiveness."
+      question: "Business Interruption Impact Analysis",
+      answer: "Analysis of potential operational disruptions and their financial impacts to inform risk management and insurance strategies."
+    },
+    
+    // Remaining services from Section 3
+    {
+      question: "HAZID Study",
+      answer: "Early-stage hazard identification study that systematically identifies potential safety, environmental and operational hazards during project conceptual or FEED phase."
+    },
+    {
+      question: "FMEA",
+      answer: "Failure Modes and Effects Analysis that examines potential failure modes within systems or equipment, their causes and effects, with risk prioritization."
+    },
+    {
+      question: "LOPA & SIL Study",
+      answer: "Layer of Protection Analysis and Safety Integrity Level determination to evaluate independent protection layers and specify required safety system reliability."
+    },
+    
+    // Remaining services from Section 4
+    {
+      question: "Fire & Gas (F&G) Mapping Study",
+      answer: "Detector placement optimization using 3D modeling to ensure adequate coverage and early detection of hazardous events in compliance with industry standards."
+    },
+    {
+      question: "Bow Tie Analysis",
+      answer: "Visual risk assessment method combining fault tree and event tree analysis to illustrate hazard causes, preventive/mitigative barriers, and potential consequences."
+    },
+    {
+      question: "Hazardous Area Classification (HAC)",
+      answer: "Classification of areas where explosive atmospheres may occur to guide proper equipment selection and installation per IEC/ATEX/NEC standards."
+    },
+    
+    // Remaining services from Section 5
+    {
+      question: "Escape, Evacuation & Rescue Analysis (EERA)",
+      answer: "Evaluation of emergency escape routes, evacuation procedures and rescue capabilities to ensure personnel safety during critical incidents."
+    },
+    {
+      question: "Facility Siting & Layout Study",
+      answer: "Assessment of building and equipment placement to minimize risk exposure, considering blast overpressure, toxic release and fire hazards."
     }
   ];
 
@@ -499,7 +528,7 @@ const Services = () => {
             viewport={{ once: true }}
           >
             <h2 className="text-3xl font-bold text-gray-900 mb-4">
-              Our Process Safety Expertise
+              Our Process Safety Services
             </h2>
             <p className="text-xl text-gray-600 max-w-4xl mx-auto">
               We provide comprehensive risk management solutions across all project phases - from conceptual design to operations and decommissioning. Our services help you comply with regulations while optimizing safety and operational efficiency.
@@ -554,7 +583,7 @@ const Services = () => {
                   <div>
                     <h3 className="text-xl font-semibold text-gray-900 mb-4 flex items-center">
                       <Shield className="h-5 w-5 text-primary mr-2" />
-                      Study Purpose
+                      Service Purpose
                     </h3>
                     <ul className="space-y-3">
                       {service.details.purpose.map((item, i) => (
@@ -608,7 +637,7 @@ const Services = () => {
             >
               <h3 className="text-xl font-semibold text-gray-900 mb-6 flex items-center justify-center">
                 <ClipboardList className="h-6 w-6 text-primary mr-2" />
-                Study Deliverables
+                Service Deliverables
               </h3>
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
                 {service.details.deliverables.map((item, i) => (
@@ -642,10 +671,10 @@ const Services = () => {
             viewport={{ once: true }}
           >
             <h2 className="text-3xl font-bold text-gray-900 mb-4">
-              Complementary Services
+              Additional Services
             </h2>
             <p className="text-xl text-gray-600">
-              Integrated solutions to address all your process safety needs
+              Comprehensive solutions covering all aspects of process safety and risk management
             </p>
           </motion.div>
 

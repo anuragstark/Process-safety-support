@@ -127,16 +127,16 @@ const Careers = () => {
                 alt="Team collaboration"
                 className="rounded-lg shadow-2xl w-full"
               />
-              <div className="absolute -bottom-6 -left-6 bg-primary text-white p-6 rounded-lg shadow-lg">
+              {/* <div className="absolute -bottom-6 -left-6 bg-primary text-white p-6 rounded-lg shadow-lg">
                 <div className="text-2xl font-bold">20+</div>
                 <div className="text-sm">Countries Served</div>
-              </div>
+              </div> */}
             </motion.div>
           </div>
         </div>
       </section>
 
-      {/* Current Openings */}
+      {/* Current Openings
       <section className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <motion.div
@@ -154,7 +154,7 @@ const Careers = () => {
             <p className="text-2xl text-gray-500">No current openings</p>
           </motion.div>
         </div>
-      </section>
+      </section> */}
 
       {/* CTA Section */}
       <section className="py-20 bg-gradient-to-r from-primary to-earth text-white">

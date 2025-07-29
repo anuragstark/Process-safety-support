@@ -33,8 +33,8 @@ const Training = () => {
     <Layout>
       {/* Hero Section */}
       <HeroSection
-        title="Professional Training Programs"
-        description="Comprehensive process safety training to develop your team's expertise and ensure operational excellence"
+        title="Process Safety & Loss Prevention Programs"
+        description="Comprehensive Process Safety & Loss Prevention trainings to develop your Team’s focus enhancing Safety and Operational excellence."
         backgroundImageNew="https://techehs.com/wp-content/uploads/2025/05/Adapting-BBS-banner.png"
       />
 

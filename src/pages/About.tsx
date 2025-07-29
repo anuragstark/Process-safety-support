@@ -8,6 +8,11 @@ import Layout from '@/components/Layout';
 const About = () => {
   const certifications = [
     {
+      title: "Professional Process Safety Engineer",
+      organization: "IIChemE",
+      icon: Award
+    },
+    {
       title: "Certified Process Safety Auditor (CPSA)",
       organization: "Institute of Internal Auditors",
       icon: Award
@@ -30,7 +35,7 @@ const About = () => {
   ];
 
   const companies = [
-    "ADNOC", "British Petroleum", "Technip FMC", "Kuwait Oil Company", "SPETCO", 
+    "ADNOC", "British Petroleum", "Technip FMC", "Kuwait Oil Company", "SPETCO",
     "Future Generali", "Bajaj Allianz", "Acutech Consulting", "Det Norske Veritas (DNV)"
   ];
 
@@ -169,7 +174,7 @@ const About = () => {
     <Layout>
       {/* Hero Section */}
       <HeroSection
-        title="Sunil Sori – Professional Process Safety Engineer"
+        title="Sunil Sori - CPSA, CFSP, MIChemE Professional Process Safety Engineer"
         description="Over two decades of expertise in Process Safety, Risk Engineering & Technical Leadership"
         backgroundImageNew="/assets/about.jpg"
       />
@@ -193,7 +198,7 @@ const About = () => {
                 />
               </div>
               <div className="absolute -bottom-6 -right-6 bg-primary text-white p-6 rounded-lg shadow-lg">
-                <div className="text-2xl font-bold">20+ yrs</div>
+                <div className="text-2xl font-bold">23+ yrs</div>
                 <div className="text-sm">Process Safety Expertise</div>
               </div>
             </motion.div>
@@ -225,23 +230,23 @@ const About = () => {
                   </div>
                   <div className="flex items-start space-x-3">
                     <Phone className="h-5 w-5 text-primary mt-0.5" />
-                    <span>+971-544398786</span>
+                    <span>+91-6366231932</span>
                   </div>
-                  <div className="flex items-start space-x-3">
+                  {/* <div className="flex items-start space-x-3">
                     <MapPin className="h-5 w-5 text-primary mt-0.5" />
                     <span>1206, The Wave, Al-Reem Island, Abu Dhabi, UAE</span>
-                  </div>
-                  <div className="flex items-start space-x-3">
+                  </div> */}
+                  {/* <div className="flex items-start space-x-3">
                     <Calendar className="h-5 w-5 text-primary mt-0.5" />
                     <span>Date of Birth: 21 January 1980</span>
-                  </div>
+                  </div> */}
                 </div>
 
                 <div className="mt-6">
-                  <a 
-                    href="https://www.linkedin.com/in/sunilsori/" 
-                    target="_blank" 
-                    rel="noopener noreferrer" 
+                  <a
+                    href="https://www.linkedin.com/in/sunil-sori/"
+                    target="_blank"
+                    rel="noopener noreferrer"
                     className="inline-flex items-center text-primary underline"
                   >
                     View LinkedIn Profile <ChevronRight className="h-4 w-4 ml-1" />
@@ -320,7 +325,7 @@ const About = () => {
       </section>
 
       {/* Career History */}
-      <section className="py-20 bg-gradient-section">
+      {/* <section className="py-20 bg-gradient-section">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <motion.div className="text-center mb-16"
             initial={{ opacity: 0, y: 50 }}
@@ -333,7 +338,7 @@ const About = () => {
 
           <div className="space-y-12">
             {careerHistory.map((job, index) => (
-              <motion.div 
+              <motion.div
                 key={index}
                 initial={{ opacity: 0, y: 50 }}
                 whileInView={{ opacity: 1, y: 0 }}
@@ -353,7 +358,7 @@ const About = () => {
                       </Badge>
                     </div>
                   </div>
-                  
+
                   <ul className="mt-6 space-y-3">
                     {job.responsibilities.map((item, itemIndex) => (
                       <li key={itemIndex} className="flex items-start">
@@ -367,7 +372,7 @@ const About = () => {
             ))}
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* Trainings */}
       <section className="py-20 bg-white">
@@ -487,7 +492,7 @@ const About = () => {
       </section>
 
       {/* References */}
-      <section className="py-20 bg-gradient-section">
+      {/* <section className="py-20 bg-gradient-section">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <motion.div className="text-center mb-16"
             initial={{ opacity: 0, y: 50 }}
@@ -512,7 +517,7 @@ const About = () => {
                   <h3 className="text-xl font-bold text-gray-900 mb-2">{ref.name}</h3>
                   <p className="text-primary mb-1">{ref.position}</p>
                   <p className="text-gray-600 mb-4">{ref.company}</p>
-                  
+
                   <div className="space-y-2">
                     <div className="flex items-center">
                       <Mail className="h-5 w-5 text-gray-500 mr-2" />
@@ -528,7 +533,7 @@ const About = () => {
             ))}
           </div>
         </div>
-      </section>
+      </section> */}
     </Layout>
   );
 };

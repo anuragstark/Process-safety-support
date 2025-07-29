@@ -25,8 +25,8 @@ const Footer = () => {
               {/* <span className="text-xl font-bold">Process Safety Support</span> */}
             </div>
             <p className="text-gray-300 mb-4 max-w-md">
-              Leading process safety consultancy providing comprehensive risk management,
-              insurance studies, and training solutions for the oil & gas industry.
+              Emerging Process Safety and Loss Prevention consultancy providing comprehensive solutions for Oil & Gas, 
+              Process Industries, Insurance Risk Management and related trainings.
             </p>
             <div className="flex space-x-4">
               <Button variant="ghost" size="sm" className="text-gray-300 hover:text-white p-2">

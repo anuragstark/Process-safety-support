@@ -26,7 +26,7 @@ const Contact = () => {
     },
     {
       icon: MapPin,
-      title: "Office",
+      title: "Registered Office",
       content: "1101, Opal Tower, Keystone Skyvillas, Near Iskon Habitat, Narayan Garden Road, New Alkapuri, Gotri, Vadodara - 390021, Gujarat,   India",
       link: "#"
     }
