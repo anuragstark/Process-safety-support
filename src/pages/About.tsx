@@ -192,7 +192,7 @@ const About = () => {
             >
               <div className="aspect-[3/4] rounded-lg overflow-hidden shadow-2xl">
                 <img
-                  src="/assets/sunil.png"
+                  src="/assets/sunil sori.jpg"
                   alt="Sunil Sori - Process Safety Expert"
                   className="w-full h-full object-cover"
                 />
@@ -226,7 +226,7 @@ const About = () => {
                 <div className="mt-6 grid grid-cols-1 md:grid-cols-2 gap-4">
                   <div className="flex items-start space-x-3">
                     <Mail className="h-5 w-5 text-primary mt-0.5" />
-                    <span>sorisunil@yahoo.com</span>
+                    <span>enquiry@processsafetysupport.com</span>
                   </div>
                   <div className="flex items-start space-x-3">
                     <Phone className="h-5 w-5 text-primary mt-0.5" />
