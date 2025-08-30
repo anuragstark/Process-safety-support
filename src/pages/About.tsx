@@ -192,7 +192,7 @@ const About = () => {
             >
               <div className="aspect-[3/4] rounded-lg overflow-hidden shadow-2xl">
                 <img
-                  src="/assets/Sunilsori.jpg"
+                  src="/assets/Sunilsori.jpeg"
                   alt="Sunil Sori - Process Safety Expert"
                   className="w-full h-full object-cover"
                 />
