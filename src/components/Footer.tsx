@@ -85,9 +85,12 @@ const Footer = () => {
           </div>
         </div>
 
-        <div className="border-t border-gray-800 mt-8 pt-8 text-center">
+        <div className="border-t border-gray-800 mt-8 pt-8 flex flex-col md:flex-row justify-between items-center text-center md:text-left gap-4">
           <p className="text-gray-400">
             © 2025 Process Safety Support. All rights reserved.
+          </p>
+          <p className="text-gray-400 text-sm">
+            Developed by <a href="https://www.linkedin.com/in/anuragstark/" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors">Anurag stark</a>
           </p>
         </div>
       </div>
